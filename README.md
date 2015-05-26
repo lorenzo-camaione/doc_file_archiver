@@ -1,5 +1,6 @@
 This program allows you to store in a MySQL database texts and comments of ".doc files" saved within a folder. The program also works with folders nested in several levels.
 
+doc_file_archiver uses the "yomu" gem (version 0.2.2).
 
 
 1)Make sure that gem "yomu" is installed on your system. If not, type this on the shell:
@@ -27,3 +28,7 @@ so create a user like this or change the source code where needed to use a diffe
 4)Make sure that the user has permissions to modify the database: 
 
 	GRANT ALL ON doc_db.* to script@localhost;
+
+
+
+Collaborators: Federico Cioschi, Lorenzo Camaione, Marcello Pichini, Vasco Coelho. 
