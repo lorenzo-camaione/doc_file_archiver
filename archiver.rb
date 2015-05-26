@@ -23,7 +23,8 @@ begin
 		yomu = Yomu.new "#{f}"
 		text = yomu.text.gsub('"', '\"')
 		comment = yomu.metadata['Comments'].gsub('"', '\"')
-        
+		
+		
 		input = "INSERT INTO doc_table (file_name, doc_text, doc_comment) VALUES(\"#{f}\", \"#{text}\", \"#{comment}\");"
 		con.query(input)
 		
