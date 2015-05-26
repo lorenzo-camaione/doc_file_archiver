@@ -1,3 +1,5 @@
+#Collaborators: Federico Cioschi, Lorenzo Camaione, Marcello Pichini, Vasco Coelho
+
 
 require 'yomu'
 require 'mysql'
