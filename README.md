@@ -4,9 +4,13 @@ This program allows you to store in a MySQL database texts and comments of ".doc
 doc_file_archiver uses the "yomu" gem (version 0.2.2).
 
 
-1)Make sure that gem "yomu" is installed on your system. If not, type this on the shell:
+1)Make sure that "yomu" and "mysql" gems are installed on your system. If not, type this on the shell:
 
 	sudo gem install yomu
+
+	sudo apt-get install libmysqlclient-dev
+	
+	gem install mysql
 
 
 
@@ -16,13 +20,17 @@ doc_file_archiver uses the "yomu" gem (version 0.2.2).
 	
 	
 
-3)The program uses the following data for MySql access:
+3)The program uses the following data for MySql access: 
 
-	user: script
-	
-	pass: password
-	
-so create a user like this or change the source code where needed to use a different user.
+  	user: script
+
+  	pass: password
+
+so create a user like this typing:
+
+	CREATE USER 'script'@'localhost' IDENTIFIED BY 'password';
+
+or change the source code where needed to use a different user.
 
 
 
